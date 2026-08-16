@@ -26,7 +26,7 @@ export default function Navbar() {
     { name: "Home", href: "/#home" },
     { name: "About", href: "/#about" },
     { name: "Services", href: "/#services" },
-    { name: "Airport NOC", href: "/airport-noc" },
+    { name: "Airport NOC", href: "/#services" },
     { name: "Projects", href: "/#projects" },
     { name: "Coverage", href: "/#coverage" },
     { name: "Contact", href: "/#contact" },

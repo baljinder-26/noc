@@ -13,7 +13,7 @@ export default function Footer() {
   ];
 
   const mainServices = [
-    { name: "Airport Height NOC", href: "/airport-noc" },
+    { name: "Airport Height NOC", href: "/#services" },
     { name: "AAI & IAF Clearance Liaison", href: "/#services" },
     { name: "WGS-84 Survey", href: "/#services" },
     { name: "CNS & OLS Assessment", href: "/#services" },

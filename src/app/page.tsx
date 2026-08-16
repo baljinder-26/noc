@@ -23,6 +23,7 @@ import {
   Gauge
 } from "lucide-react";
 
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Counter from "@/components/Counter";
@@ -33,6 +34,7 @@ import FaqSection from "@/components/FaqSection";
 import ContactForm from "@/components/ContactForm";
 import ClearanceCard from "@/components/ClearanceCard";
 import HeightCalculator from "@/components/HeightCalculator";
+import NocDetailsModal from "@/components/NocDetailsModal";
 
 // Animation Variants for Scroll Reveals
 const fadeInUp = {
@@ -51,6 +53,8 @@ const staggerContainer = {
 } as const;
 
 export default function Home() {
+  const [isNocModalOpen, setIsNocModalOpen] = useState(false);
+
   // Why Choose Us list
   const whyChooseUs = [
     { title: "30+ Years Aviation Experience", desc: "Decades of active operational expertise in the aviation sector." },
@@ -431,16 +435,25 @@ export default function Home() {
                 {/* Specific link for Airport Height Clearance if matching */}
                 <div className="mt-4 pt-4 border-t border-slate-900 flex justify-end">
                   {srv.title.includes("Airport Height") ? (
-                    <Link href="/airport-noc" className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors">
+                    <button 
+                      onClick={() => setIsNocModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
                       <span>View Details</span>
                       <ChevronRight className="w-3.5 h-3.5" />
-                    </Link>
+                    </button>
                   ) : null}
                 </div>
               </motion.div>
             ))}
           </motion.div>
         </div>
+
+        {/* NocDetailsModal Component Overlay */}
+        <NocDetailsModal 
+          isOpen={isNocModalOpen} 
+          onClose={() => setIsNocModalOpen(false)} 
+        />
       </section>
 
       {/* Interactive Height Clearance Calculator Widget section */}
