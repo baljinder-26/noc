@@ -131,7 +131,6 @@ export default function Home() {
           {/* Subtle gradient vignette to preserve readability without washing out the photo */}
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/40" />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/70" />
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] bg-[size:32px_32px] opacity-10 pointer-events-none" />
         </div>
 
         {/* Hero Content */}
