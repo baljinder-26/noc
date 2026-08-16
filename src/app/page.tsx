@@ -126,11 +126,11 @@ export default function Home() {
             fill
             priority
             quality={100}
-            className="object-cover object-center opacity-100 filter brightness-110 contrast-105 saturate-110"
+            className="object-cover object-[75%_15%] opacity-100 filter brightness-115 contrast-105 saturate-110"
           />
-          {/* Light gradient vignette to keep text readable while letting the bright photo show fully */}
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-950/40 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/50" />
+          {/* Light gradient vignette focused on left side text contrast, leaving top right sky with aeroplane 100% bright */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent" />
         </div>
 
         {/* Hero Content */}
