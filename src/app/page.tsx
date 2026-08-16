@@ -157,7 +157,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="font-poppins font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.95)]"
               >
-                India's Trusted <span className="text-gradient-gold font-black">Airport/Height NOC</span> Consultants
+                India's Trusted Aviation Clearance & <span className="text-gradient-gold font-black">Airport NOC</span> Consultants
               </motion.h1>
 
               <motion.p
