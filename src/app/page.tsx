@@ -36,6 +36,7 @@ import ClearanceCard from "@/components/ClearanceCard";
 import HeightCalculator from "@/components/HeightCalculator";
 import NocDetailsModal from "@/components/NocDetailsModal";
 import SiteEvaluationModal from "@/components/SiteEvaluationModal";
+import Wgs84SurveyModal from "@/components/Wgs84SurveyModal";
 
 // Animation Variants for Scroll Reveals
 const fadeInUp = {
@@ -56,6 +57,7 @@ const staggerContainer = {
 export default function Home() {
   const [isNocModalOpen, setIsNocModalOpen] = useState(false);
   const [isSiteEvalModalOpen, setIsSiteEvalModalOpen] = useState(false);
+  const [isWgsModalOpen, setIsWgsModalOpen] = useState(false);
 
   // Why Choose Us list
   const whyChooseUs = [
@@ -76,9 +78,8 @@ export default function Home() {
   // Services list
   const services = [
     { title: "Airport Height Clearance Consultancy", desc: "Professional guidance for obtaining Airport Height Clearance approvals from AAI and IAF wherever applicable." },
-    { title: "Aviation Site Evaluation", desc: "An aviation site evaluation and assessment is a process to check and ascertain that the proposed height of the building or structure does not infringe the Obstacle Limitation Surfaces (OLS) or the Communication, Navigation, and Surveillance (CNS) surfaces thereby ensuring that the surrounding airspace is clear for aircraft operations and ground-based radio/radar signals." },
+    { title: "Aviation Site Evaluation", desc: "Preliminary feasibility assessment before project planning to detect height limitations." },
     { title: "WGS-84 Aviation Survey", desc: "Accurate aviation coordinate surveys using dual-frequency DGPS under WGS-84 standards." },
-    { title: "Geo-Spatial Survey", desc: "High precision geo-spatial mapping for aviation safety compliance and structural data." },
     { title: "Drone Survey & Mapping", desc: "Professional drone surveys for accurate site data collection and aerial grids." },
     { title: "CNS & OLS Assessment", desc: "Communication, Navigation & Surveillance analysis together with Obstacle Limitation Surface assessment." },
     { title: "NOCAS Portal Management", desc: "Preparation, submission, and continuous monitoring of Airport Clearance applications." },
@@ -452,6 +453,14 @@ export default function Home() {
                       <span>View Details</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </button>
+                  ) : srv.title.includes("WGS-84") ? (
+                    <button 
+                      onClick={() => setIsWgsModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
                   ) : null}
                 </div>
               </motion.div>
@@ -467,6 +476,10 @@ export default function Home() {
         <SiteEvaluationModal 
           isOpen={isSiteEvalModalOpen} 
           onClose={() => setIsSiteEvalModalOpen(false)} 
+        />
+        <Wgs84SurveyModal 
+          isOpen={isWgsModalOpen} 
+          onClose={() => setIsWgsModalOpen(false)} 
         />
       </section>
 
