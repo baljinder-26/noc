@@ -255,18 +255,18 @@ export default function Home() {
               <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white leading-tight">
                 About High Rise Approvals
               </h2>
-              <div className="space-y-4 text-sm sm:text-base text-slate-400 leading-relaxed font-inter">
+              <div className="space-y-4 text-sm sm:text-base text-slate-300 leading-relaxed font-inter">
                 <p>
-                  High Rise Approvals is a specialized aviation consultancy providing professional assistance for Airport Height Clearance approvals and aviation compliance across India.
+                  &ldquo;High Rise Approvals&rdquo; is a specialized Airport / Height NOC consultancy firm providing professional guidance and assistance for obtaining Airport Height Clearance, PAN India.
                 </p>
-                <p className="font-medium text-white">
-                  With more than two and a half decades of diverse aviation experience, our founder has served in key aviation appointments, including heading Airport NOC Cells at various aviation stations.
-                </p>
-                <p>
-                  Following retirement, High Rise Approvals was established with a team of experienced aviation professionals dedicated to simplifying the complex Airport Clearance process for builders, developers, industries, architects, telecom companies, hospitals, educational institutions, and infrastructure projects.
+                <p className="font-semibold text-white bg-white/5 p-4 rounded-lg border-l-4 border-secondary">
+                  The firm is led by founder and CEO, Air Veteran Kulbinder Singh Doad, a seasoned expert with almost three decades of diverse aviation experience within the military and civil fraternity. He has served in key aviation appointments, including overseeing the Airport NOC Cell at various IAF stations, working closely at international civil airports within India including an overseas assignment at Paro International Airport, Bhutan.
                 </p>
                 <p>
-                  We provide comprehensive consultancy including technical surveys, geo-spatial mapping, WGS-84 surveys, CNS/OLS assessments, aeronautical studies, application management, documentation support, and liaison assistance to help clients obtain approvals from the relevant government authorities.
+                  Post retirement, &ldquo;High Rise Approvals&rdquo; was founded with an experienced team of dedicated aviation professionals committed to providing seamless Airport NOC clearance from AAI / Defence for builders, developers, architects, hospitals, telecom companies, educational institutions and hospitality industry.
+                </p>
+                <p>
+                  Backed by our experience, expertise and dedicated team, we excel in providing comprehensive Airport NOC consultancy services which includes WGS-84 survey, CNS/OLS assessment, aeronautical studies, documentation support, online and offline application management, and liaison assistance to help our esteemed clients obtain seamless Airport approval from AAI / Defence.
                 </p>
               </div>
             </motion.div>
@@ -322,15 +322,15 @@ export default function Home() {
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
               Leadership Built on Aviation Excellence
             </h2>
-            <div className="space-y-4 font-inter text-slate-400 text-sm sm:text-base leading-relaxed">
+            <div className="space-y-4 font-inter text-slate-300 text-sm sm:text-base leading-relaxed">
               <p>
-                Our founder brings more than 25 years of distinguished experience in the aviation sector, including heading Airport NOC Cells at multiple aviation stations.
+                Led by Founder and CEO <strong className="text-white">Air Veteran Kulbinder Singh Doad</strong>, our leadership brings almost three decades of distinguished military and civil aviation expertise, including overseeing Airport NOC Cells at various IAF stations and key international civil airports.
               </p>
               <p className="text-white font-medium italic border-l-4 border-secondary pl-4 my-6 text-left max-w-2xl mx-auto bg-white/5 py-4 pr-4 rounded-r">
-                &ldquo;This extensive operational experience provides unmatched understanding of aviation regulations, obstacle limitation requirements, airport safeguarding, and aviation safety compliance.&rdquo;
+                &ldquo;Our operational experience provides unmatched understanding of aviation regulations, obstacle limitation requirements, airport safeguarding, and NOC compliance from AAI & Defence.&rdquo;
               </p>
               <p>
-                Today, this knowledge is combined with a dedicated team of aviation professionals delivering precise surveys, technical studies, documentation, and regulatory consultancy for Airport Height Clearance NOCs.
+                Today, this deep expertise is backed by a dedicated team of aviation professionals delivering WGS-84 surveys, CNS/OLS assessments, aeronautical studies, documentation, and liaison assistance for seamless Airport Height Clearance NOCs PAN India.
               </p>
             </div>
           </motion.div>
