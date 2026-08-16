@@ -116,7 +116,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section - Split Interactive Redesign */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-36 sm:pt-40 lg:pt-44 pb-16">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-24 sm:pt-28 lg:pt-32 pb-12">
         
         {/* Background Image & Soft Vignette */}
         <div className="absolute inset-0 z-0 overflow-hidden">
@@ -134,7 +134,7 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 w-full py-12">
+        <div className="relative z-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 w-full pt-4 pb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left Side: Call to Action */}
