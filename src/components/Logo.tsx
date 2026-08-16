@@ -18,11 +18,11 @@ export default function Logo({
     <div className={`flex items-center gap-3.5 ${className}`}>
       {/* Exact Circular Golden Emblem Logo */}
       <div
-        className="relative flex items-center justify-center shrink-0 rounded-full"
+        className="relative flex items-center justify-center shrink-0 rounded-full overflow-hidden border-2 border-white/40 shadow-[0_0_16px_rgba(245,158,11,0.35)]"
         style={{ width: size, height: size }}
       >
         {/* Eye-catching ambient golden halo glow behind emblem */}
-        <div className="absolute inset-0 rounded-full bg-amber-400/25 blur-md pointer-events-none group-hover:bg-amber-400/40 transition-all duration-300" />
+        <div className="absolute inset-0 rounded-full bg-amber-400/30 blur-md pointer-events-none group-hover:bg-amber-400/45 transition-all duration-300" />
 
         <Image
           src="/logo-emblem.png"
@@ -30,7 +30,7 @@ export default function Logo({
           width={180}
           height={180}
           priority
-          className="w-full h-full object-contain relative z-10 drop-shadow-[0_4px_12px_rgba(212,175,55,0.45)] transition-transform duration-300 group-hover:scale-105 rounded-full"
+          className="w-full h-full object-cover scale-[1.08] rounded-full relative z-10 transition-transform duration-300 group-hover:scale-115"
         />
       </div>
 

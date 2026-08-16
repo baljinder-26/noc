@@ -44,7 +44,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo Link using single line glowing SVG Logo & Sci-fi Typography */}
           <Link href="/#home" className="group shrink-0 mr-4 2xl:mr-8">
-            <Logo size={isScrolled ? 56 : 68} showText={true} textSize="lg" />
+            <Logo size={isScrolled ? 64 : 76} showText={true} textSize="lg" />
           </Link>
 
           {/* Desktop Nav Links */}
