@@ -206,31 +206,31 @@ export default function Home() {
 
       {/* Statistics Section (Floating Overlay Layout) */}
       <section className="relative z-30 -mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="glass-card-dark rounded-2xl shadow-2xl border border-secondary/20 p-8 grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex flex-col items-center justify-center text-center border-r border-slate-900 last:border-0 pr-4 lg:pr-8 last:pr-0">
-            <Counter value={300} suffix="+" />
-            <span className="font-poppins font-bold text-xs sm:text-sm text-slate-400 uppercase tracking-wide mt-2">
+        <div className="glass-card-dark rounded-2xl shadow-2xl border border-amber-400/25 p-8 grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-col items-center justify-center text-center border-r border-slate-800/80 pr-4 lg:pr-8">
+            <Counter value={250} suffix="+" />
+            <span className="font-poppins font-extrabold text-xs sm:text-sm text-slate-200 uppercase tracking-wider mt-2.5">
               Projects Successfully Delivered
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center text-center lg:border-r border-slate-900 pr-4 lg:pr-8">
+          <div className="flex flex-col items-center justify-center text-center lg:border-r border-slate-800/80 pr-4 lg:pr-8">
             <Counter value={30} suffix="+" />
-            <span className="font-poppins font-bold text-xs sm:text-sm text-slate-400 uppercase tracking-wide mt-2">
+            <span className="font-poppins font-extrabold text-xs sm:text-sm text-slate-200 uppercase tracking-wider mt-2.5">
               Years of Aviation Experience
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center text-center border-r border-slate-900 pr-4 last:pr-0">
+          <div className="flex flex-col items-center justify-center text-center border-r border-slate-800/80 pr-4 last:border-0 pr-4 lg:pr-8">
             <Counter value={100} suffix="%" />
-            <span className="font-poppins font-bold text-xs sm:text-sm text-slate-400 uppercase tracking-wide mt-2">
+            <span className="font-poppins font-extrabold text-xs sm:text-sm text-slate-200 uppercase tracking-wider mt-2.5">
               Dedicated Support
             </span>
           </div>
 
           <div className="flex flex-col items-center justify-center text-center">
-            <span className="font-poppins font-extrabold text-3xl sm:text-5xl text-secondary">Pan India</span>
-            <span className="font-poppins font-bold text-xs sm:text-sm text-slate-400 uppercase tracking-wide mt-2">
+            <span className="font-poppins font-black text-3xl sm:text-5xl text-amber-400 text-gradient-gold drop-shadow-[0_2px_10px_rgba(245,158,11,0.4)]">Pan India</span>
+            <span className="font-poppins font-extrabold text-xs sm:text-sm text-slate-200 uppercase tracking-wider mt-2.5">
               Service Coverage
             </span>
           </div>

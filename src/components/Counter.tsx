@@ -33,7 +33,7 @@ export default function Counter({ value, duration = 1.5, suffix = "" }: CounterP
   }, [isInView, value, duration]);
 
   return (
-    <span ref={ref} className="font-poppins font-extrabold text-4xl sm:text-5xl text-primary tabular-nums">
+    <span ref={ref} className="font-poppins font-black text-4xl sm:text-5xl text-amber-400 text-gradient-gold drop-shadow-[0_2px_10px_rgba(245,158,11,0.4)] tabular-nums">
       {count}
       {suffix}
     </span>
