@@ -7,7 +7,7 @@ export default function ClearanceCard() {
   const credentials = [
     {
       title: "AAI NOCAS Portal",
-      desc: "End-to-end filing & height clearance tracking.",
+      desc: "End-to-end online filing & obtaining height clearance NOC.",
       icon: ShieldCheck,
     },
     {
