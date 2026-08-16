@@ -36,15 +36,15 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "glass-nav shadow-2xl py-3"
-          : "glass-nav-transparent py-5"
+          ? "bg-slate-950/95 backdrop-blur-xl border-b border-slate-800/80 shadow-2xl py-3"
+          : "bg-slate-950/90 backdrop-blur-lg border-b border-slate-900/80 shadow-xl py-3.5"
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo Link using single line glowing SVG Logo & Sci-fi Typography */}
           <Link href="/#home" className="group shrink-0 mr-4 2xl:mr-8">
-            <Logo size={isScrolled ? 64 : 76} showText={true} textSize="lg" />
+            <Logo size={isScrolled ? 58 : 70} showText={true} textSize="lg" />
           </Link>
 
           {/* Desktop Nav Links */}
@@ -53,7 +53,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="font-inter font-semibold text-xs 2xl:text-sm transition-colors relative py-1 text-slate-300 hover:text-white group whitespace-nowrap"
+                className="font-inter font-bold text-xs 2xl:text-sm transition-colors relative py-1 text-slate-100 hover:text-secondary group whitespace-nowrap drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
               >
                 {link.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
@@ -65,7 +65,7 @@ export default function Navbar() {
           <div className="hidden 2xl:flex items-center space-x-4 shrink-0">
             <a
               href="tel:9501689445"
-              className="flex items-center space-x-2 font-inter font-bold text-xs 2xl:text-sm transition-colors text-slate-300 hover:text-secondary whitespace-nowrap"
+              className="flex items-center space-x-2 font-inter font-bold text-xs 2xl:text-sm transition-colors text-slate-100 hover:text-secondary whitespace-nowrap drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
             >
               <Phone className="w-4 h-4 text-secondary animate-pulse" />
               <span>+91 95016 89445</span>
