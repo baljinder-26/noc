@@ -35,6 +35,7 @@ import ContactForm from "@/components/ContactForm";
 import ClearanceCard from "@/components/ClearanceCard";
 import HeightCalculator from "@/components/HeightCalculator";
 import NocDetailsModal from "@/components/NocDetailsModal";
+import SiteEvaluationModal from "@/components/SiteEvaluationModal";
 
 // Animation Variants for Scroll Reveals
 const fadeInUp = {
@@ -54,6 +55,7 @@ const staggerContainer = {
 
 export default function Home() {
   const [isNocModalOpen, setIsNocModalOpen] = useState(false);
+  const [isSiteEvalModalOpen, setIsSiteEvalModalOpen] = useState(false);
 
   // Why Choose Us list
   const whyChooseUs = [
@@ -74,7 +76,7 @@ export default function Home() {
   // Services list
   const services = [
     { title: "Airport Height Clearance Consultancy", desc: "Professional guidance for obtaining Airport Height Clearance approvals from AAI and IAF wherever applicable." },
-    { title: "Aviation Site Evaluation", desc: "Preliminary feasibility assessment before project planning to detect height limitations." },
+    { title: "Aviation Site Evaluation", desc: "An aviation site evaluation and assessment is a process to check and ascertain that the proposed height of the building or structure does not infringe the Obstacle Limitation Surfaces (OLS) or the Communication, Navigation, and Surveillance (CNS) surfaces thereby ensuring that the surrounding airspace is clear for aircraft operations and ground-based radio/radar signals." },
     { title: "WGS-84 Aviation Survey", desc: "Accurate aviation coordinate surveys using dual-frequency DGPS under WGS-84 standards." },
     { title: "Geo-Spatial Survey", desc: "High precision geo-spatial mapping for aviation safety compliance and structural data." },
     { title: "Drone Survey & Mapping", desc: "Professional drone surveys for accurate site data collection and aerial grids." },
@@ -432,11 +434,19 @@ export default function Home() {
                     {srv.desc}
                   </p>
                 </div>
-                {/* Specific link for Airport Height Clearance if matching */}
+                {/* Specific View Details modal triggers */}
                 <div className="mt-4 pt-4 border-t border-slate-900 flex justify-end">
                   {srv.title.includes("Airport Height") ? (
                     <button 
                       onClick={() => setIsNocModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  ) : srv.title.includes("Aviation Site Evaluation") ? (
+                    <button 
+                      onClick={() => setIsSiteEvalModalOpen(true)} 
                       className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
                     >
                       <span>View Details</span>
@@ -449,10 +459,14 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* NocDetailsModal Component Overlay */}
+        {/* Modal Component Overlays */}
         <NocDetailsModal 
           isOpen={isNocModalOpen} 
           onClose={() => setIsNocModalOpen(false)} 
+        />
+        <SiteEvaluationModal 
+          isOpen={isSiteEvalModalOpen} 
+          onClose={() => setIsSiteEvalModalOpen(false)} 
         />
       </section>
 
