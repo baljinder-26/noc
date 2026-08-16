@@ -116,7 +116,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section - Split Interactive Redesign */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-24 md:pt-0">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-36 sm:pt-40 lg:pt-44 pb-16">
         
         {/* Background Grid Overlay */}
         <div className="absolute inset-0 z-0 opacity-10">

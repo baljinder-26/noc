@@ -30,7 +30,7 @@ export default function AirportNocPage() {
       <Navbar />
 
       {/* Subpage Hero Banner */}
-      <section className="relative pt-32 pb-16 bg-slate-950 text-white overflow-hidden border-b border-slate-900">
+      <section className="relative pt-36 sm:pt-40 lg:pt-44 pb-16 bg-slate-950 text-white overflow-hidden border-b border-slate-900">
         {/* Background Image overlay */}
         <div className="absolute inset-0 z-0">
           <Image
