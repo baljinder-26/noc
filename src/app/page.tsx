@@ -166,7 +166,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="font-inter text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]"
               >
-                Providing end-to-end consultancy for obtaining Airport Height Clearance approvals from AAI and IAF (where applicable), along with WGS-84 Surveys, Geo-Spatial Mapping, CNS/OLS Assessments, Aeronautical Studies, and NOCAS Portal Management.
+                Providing end-to-end consultancy for obtaining Airport Height Clearance approvals from AAI and IAF (where applicable), along with WGS-84 Surveys, Geo-Spatial Mapping, CNS/OLS Assessments, Aeronautical Studies and NOCAS Portal Management.
               </motion.p>
 
               <motion.div
