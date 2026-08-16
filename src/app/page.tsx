@@ -126,7 +126,7 @@ export default function Home() {
             fill
             priority
             quality={100}
-            className="object-cover object-[65%_0%] opacity-100 filter brightness-115 contrast-105 saturate-110"
+            className="object-cover object-[68%_20%] opacity-100 filter brightness-115 contrast-105 saturate-110"
           />
           {/* Light gradient vignette focused on left side text contrast, leaving top right sky with aeroplane 100% bright & clear */}
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/20 to-transparent" />
@@ -190,11 +190,12 @@ export default function Home() {
               </motion.div>
             </div>
 
+            {/* Right Side: Clearance Card box aligned straight to the right side */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="lg:col-span-5 flex justify-center pt-6 lg:pt-14"
+              className="lg:col-span-5 flex justify-center lg:justify-end pt-12 lg:pt-28"
             >
               <ClearanceCard />
             </motion.div>
