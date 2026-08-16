@@ -118,20 +118,19 @@ export default function Home() {
       {/* Hero Section - Split Interactive Redesign */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-36 sm:pt-40 lg:pt-44 pb-16">
         
-        {/* Background Grid Overlay */}
-        <div className="absolute inset-0 z-0 opacity-10">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] bg-[size:32px_32px]" />
+        {/* Background Image & Grid Overlay */}
+        <div className="absolute inset-0 z-0">
           <Image
-            src="/hero-bg.png"
-            alt="Aviation Clearances Background"
+            src="/hero-bg.jpg"
+            alt="Aviation Clearances High Rise Building Background"
             fill
             priority
-            className="object-cover opacity-20"
+            className="object-cover opacity-35 filter contrast-105"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/80" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] bg-[size:32px_32px] opacity-10" />
         </div>
-
-        {/* Diagonal Light Stream Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-slate-950 via-slate-950/95 to-slate-900/60 z-0" />
 
         {/* Hero Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
