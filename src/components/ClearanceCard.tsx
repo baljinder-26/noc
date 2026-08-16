@@ -31,14 +31,11 @@ export default function ClearanceCard() {
 
       {/* Card Header */}
       <div className="space-y-1">
-        <span className="text-[10px] font-mono font-bold text-secondary uppercase tracking-widest block">
+        <h3 className="font-poppins font-black text-lg sm:text-xl text-amber-400 text-gradient-gold uppercase tracking-wider block drop-shadow-[0_2px_8px_rgba(245,158,11,0.4)]">
           Aviation Safeguarding
-        </span>
-        <h3 className="font-poppins font-extrabold text-lg sm:text-xl text-white leading-snug">
-          One Stop Solutions for Aviation NOC from AAI/IAF
         </h3>
-        <p className="text-xs text-slate-300 font-inter">
-          Complete coordination & precision height surveys for builders & developers.
+        <p className="text-xs sm:text-sm font-inter font-semibold text-slate-300 leading-relaxed pt-0.5">
+          One Stop Solutions for Aviation NOC from AAI/IAF
         </p>
       </div>
 
