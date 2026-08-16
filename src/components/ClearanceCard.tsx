@@ -23,7 +23,7 @@ export default function ClearanceCard() {
   ];
 
   return (
-    <div className="w-full max-w-[400px] mx-auto bg-slate-900/40 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-white/10 shadow-2xl relative overflow-hidden flex flex-col justify-between space-y-6">
+    <div className="w-full max-w-[400px] lg:ml-auto lg:mr-0 mx-auto bg-slate-900/40 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-white/10 shadow-2xl relative overflow-hidden flex flex-col justify-between space-y-6">
       
       {/* Decorative gradient overlay */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full blur-2xl pointer-events-none" />

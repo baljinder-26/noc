@@ -134,7 +134,7 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+        <div className="relative z-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 w-full py-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left Side: Call to Action */}
@@ -190,12 +190,12 @@ export default function Home() {
               </motion.div>
             </div>
 
-            {/* Right Side: Clearance Card box aligned straight to the right side */}
+            {/* Right Side: Clearance Card box aligned straight to extreme right edge */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="lg:col-span-5 flex justify-center lg:justify-end pt-12 lg:pt-28"
+              className="lg:col-span-5 flex justify-end pt-12 lg:pt-28 w-full"
             >
               <ClearanceCard />
             </motion.div>
