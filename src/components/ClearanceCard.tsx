@@ -16,8 +16,8 @@ export default function ClearanceCard() {
       icon: Target,
     },
     {
-      title: "DGCA Helipad CAR",
-      desc: "Design layouts & safety certification audits.",
+      title: "WGS-84 DGPS Survey",
+      desc: "Precision coordinate & AMSL height mapping.",
       icon: Award,
     },
   ];

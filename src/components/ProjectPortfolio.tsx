@@ -23,7 +23,6 @@ export default function ProjectPortfolio() {
     "Hospitals",
     "Educational",
     "Telecom",
-    "Helipad",
     "Infrastructure"
   ];
 
@@ -53,7 +52,7 @@ export default function ProjectPortfolio() {
       title: "Fortis Super Speciality Wing",
       category: "Hospitals",
       location: "Mohali, Punjab",
-      details: "Critical rooftop structure NOC, close proximity to airbase.",
+      details: "Critical hospital tower structure NOC, close proximity to airbase.",
       icon: Stethoscope
     },
     {
@@ -78,10 +77,10 @@ export default function ProjectPortfolio() {
       icon: Compass
     },
     {
-      title: "Rooftop Helipad - Metro Hospital",
-      category: "Helipad",
+      title: "Grand Horizon Luxury Hotel",
+      category: "Commercial",
       location: "Noida, Uttar Pradesh",
-      details: "DGCA compliant rooftop helipad safety audit and certification.",
+      details: "Obtained AAI & IAF height clearance for 22-story luxury hotel tower.",
       icon: Award
     },
     {

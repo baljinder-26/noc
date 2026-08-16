@@ -42,7 +42,7 @@ export default function InteractiveMap() {
       name: "Himachal Pradesh",
       projects: "25+ Clearances Obtained",
       leadTime: "Complex Terrain OLS",
-      specialty: "Helipads & Institutional Sites",
+      specialty: "Hospitality & Institutional Sites",
       coordinates: "31.1048° N, 77.1734° E",
       path: "M 170 120 L 205 135 L 190 170 L 170 150 Z"
     },
@@ -69,7 +69,7 @@ export default function InteractiveMap() {
       name: "Madhya Pradesh",
       projects: "50+ Sites Evaluated",
       leadTime: "DGPS Coordinate Surveys",
-      specialty: "Infrastructure & Helipads",
+      specialty: "Infrastructure & Industrial Zones",
       coordinates: "22.9734° N, 78.6569° E",
       path: "M 140 300 L 225 285 L 250 350 L 160 380 Z"
     },

@@ -12,6 +12,7 @@
   
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
+  --font-orbitron: var(--font-orbitron);
 }
 
 :root {
@@ -23,6 +24,13 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
+}
+
+/* Futuristic Brand Typography matching photo */
+.font-brand {
+  font-family: var(--font-orbitron), sans-serif;
+  font-style: italic;
+  font-weight: 800;
 }
 
 /* Luxury Gold & Navy Gradient Backgrounds */

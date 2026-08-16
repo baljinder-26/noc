@@ -106,7 +106,7 @@ export default function ProcessWizard() {
     {
       number: 10,
       title: "Approval Assistance",
-      desc: "Successfully securing the Airport Height Clearance NOC or helipad license, ready for local developers.",
+      desc: "Successfully securing the Airport Height Clearance NOC, ready for local developers.",
       icon: Award,
       duration: "1 Day",
       checklist: ["Receive final height clearance letter", "Verify coordinate matches on certificate", "Deliver approved NOC to developer client"]

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, Mail, Clock, ArrowRight, ShieldCheck } from "lucide-react";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   const quickLinks = [
@@ -14,7 +14,7 @@ export default function Footer() {
 
   const mainServices = [
     { name: "Airport Height NOC", href: "/airport-noc" },
-    { name: "DGCA Helipad Approval", href: "/helipad-approval" },
+    { name: "AAI & IAF Clearance Liaison", href: "/#services" },
     { name: "WGS-84 Survey", href: "/#services" },
     { name: "CNS & OLS Assessment", href: "/#services" },
     { name: "Aeronautical Studies", href: "/#services" },
@@ -27,24 +27,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="relative w-12 h-12 overflow-hidden rounded-full border border-secondary/40 bg-slate-900 flex items-center justify-center">
-                <Image
-                  src="/logo.png"
-                  alt="High Rise Approvals Logo"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-poppins font-extrabold text-lg text-white leading-none tracking-wide">
-                  HIGH RISE
-                </span>
-                <span className="font-poppins font-semibold text-xs tracking-widest text-secondary">
-                  APPROVALS
-                </span>
-              </div>
-            </div>
+            <Link href="/#home" className="block">
+              <Logo size={46} showText={true} textSize="md" />
+            </Link>
             <p className="text-sm text-slate-400 mt-2 leading-relaxed">
               Complete Aviation Clearance & Airport Approval Consultancy. Providing high-precision technical surveys, obstacle analyses, and professional liaison services for clearances across India.
             </p>
@@ -133,7 +118,7 @@ export default function Footer() {
         <div className="pt-8 mt-8 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
           <p>© 2026 High Rise Approvals. All Rights Reserved.</p>
           <div className="mt-4 md:mt-0 flex space-x-4">
-            <span className="text-slate-600 font-medium">Complete Aviation Clearance & Helipad Approval Consultancy</span>
+            <span className="text-slate-600 font-medium">Complete Airport Height Clearance & Aviation Consultancy</span>
             <span>|</span>
             <span>Pan India Services</span>
           </div>

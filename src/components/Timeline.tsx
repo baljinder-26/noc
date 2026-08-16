@@ -80,7 +80,7 @@ export default function Timeline() {
     {
       number: 10,
       title: "Approval Assistance",
-      desc: "Successful procurement and hand-over of the Airport Height Clearance NOC or DGCA Helipad Approval letter.",
+      desc: "Successful procurement and hand-over of the Airport Height Clearance NOC letter.",
       icon: Award
     }
   ];

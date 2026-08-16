@@ -23,11 +23,11 @@ export default function FaqSection() {
     },
     {
       q: "Who issues Airport Height Clearance?",
-      a: "Airport Height Clearance is issued by competent government authorities depending on the airport type. Commercial civil airports are managed by the Airports Authority of India (AAI), military stations are cleared by the Indian Air Force (IAF) or respective Defense Headquarters, and helipads are licensed by the Directorate General of Civil Aviation (DGCA)."
+      a: "Airport Height Clearance is issued by competent government authorities depending on the airport type. Commercial civil airports are managed by the Airports Authority of India (AAI), and military stations are cleared by the Indian Air Force (IAF) or respective Defense Headquarters."
     },
     {
       q: "Does High Rise Approvals issue Airport NOCs?",
-      a: "No. High Rise Approvals is a private aviation consultancy. We do not issue government approvals. We specialize in providing technical surveys (DGPS coordinate measurements), geo-spatial mapping, CNS/OLS assessments, case documentation, NOCAS file management, and liaison support to help developers obtain approvals smoothly from AAI, IAF, or DGCA."
+      a: "No. High Rise Approvals is a private aviation consultancy. We do not issue government approvals. We specialize in providing technical surveys (DGPS coordinate measurements), geo-spatial mapping, CNS/OLS assessments, case documentation, NOCAS file management, and liaison support to help developers obtain approvals smoothly from AAI and IAF."
     },
     {
       q: "Which authorities are involved in the clearance process?",
@@ -37,7 +37,7 @@ export default function FaqSection() {
           <ul className="list-disc pl-5 space-y-1 text-slate-400">
             <li><strong>Airports Authority of India (AAI)</strong> – for civil and joint-user airports.</li>
             <li><strong>Indian Air Force (IAF)</strong> / Respective defense branch – for military airbases.</li>
-            <li><strong>Directorate General of Civil Aviation (DGCA)</strong> – for regulatory compliance and helipad certification.</li>
+            <li><strong>Directorate General of Civil Aviation (DGCA)</strong> – for civil aviation policy & guidelines compliance.</li>
           </ul>
         </div>
       )

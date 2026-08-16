@@ -79,10 +79,6 @@ export default function Home() {
     { title: "Aeronautical Studies", desc: "Professional aviation studies for complex approval cases requiring shielding or calculations." },
     { title: "Renewal & Revalidation", desc: "Airport Clearance renewal, revalidation, and structural modification consultancy." },
     { title: "Appeals & Technical Representation", desc: "Professional support for technical reviews and AAI appellate committee processes." },
-    { title: "Ground Helipad Approval Consultancy", desc: "Technical consultancy for setting up DGCA-compliant ground helipads." },
-    { title: "Rooftop Helipad Approval Consultancy", desc: "Structural planning and safety approval consultancy for rooftop helipad projects." },
-    { title: "Helipad Design Assistance", desc: "Design layout guidance as per DGCA Civil Aviation Requirements (CAR) standards." },
-    { title: "DGCA Certification Support", desc: "Complete documentation, safety manual drafting, and audit support for DGCA approvals." },
   ];
 
   // Why Clearance is Important
@@ -104,7 +100,7 @@ export default function Home() {
       role: "Director, Garg Developers & Builders"
     },
     {
-      quote: "For our multi-specialty hospital, the rooftop helipad was a critical asset. The team provided expert DGCA design assistance and successfully navigated the complete licensing process. Their aviation background is visible in their work.",
+      quote: "For our multi-specialty hospital tower, obtaining the Airport Height NOC was critical for construction. The team provided expert aeronautical survey assistance and successfully navigated the complete AAI clearance process. Their aviation background is visible in their work.",
       author: "Dr. Sandeep Mehra",
       role: "Managing Trustee, Apollo-Grace Healthcare Group"
     },
@@ -170,7 +166,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="font-inter text-slate-400 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl"
               >
-                Providing end-to-end consultancy for obtaining Airport Height Clearance approvals from AAI and IAF (where applicable), along with WGS-84 Surveys, Geo-Spatial Mapping, CNS/OLS Assessments, Aeronautical Studies, NOCAS Portal Management, and DGCA Helipad Approval Services.
+                Providing end-to-end consultancy for obtaining Airport Height Clearance approvals from AAI and IAF (where applicable), along with WGS-84 Surveys, Geo-Spatial Mapping, CNS/OLS Assessments, Aeronautical Studies, and NOCAS Portal Management.
               </motion.p>
 
               <motion.div
@@ -260,7 +256,7 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-sm sm:text-base text-slate-400 leading-relaxed font-inter">
                 <p>
-                  High Rise Approvals is a specialized aviation consultancy providing professional assistance for Airport Height Clearance approvals, aviation compliance, and helipad approvals across India.
+                  High Rise Approvals is a specialized aviation consultancy providing professional assistance for Airport Height Clearance approvals and aviation compliance across India.
                 </p>
                 <p className="font-medium text-white">
                   With more than two and a half decades of diverse aviation experience, our founder has served in key aviation appointments, including heading Airport NOC Cells at various aviation stations.
@@ -333,7 +329,7 @@ export default function Home() {
                 &ldquo;This extensive operational experience provides unmatched understanding of aviation regulations, obstacle limitation requirements, airport safeguarding, and aviation safety compliance.&rdquo;
               </p>
               <p>
-                Today, this knowledge is combined with a dedicated team of aviation professionals delivering precise surveys, technical studies, documentation, and regulatory consultancy for Airport Height Clearance and DGCA Helipad Approvals.
+                Today, this knowledge is combined with a dedicated team of aviation professionals delivering precise surveys, technical studies, documentation, and regulatory consultancy for Airport Height Clearance NOCs.
               </p>
             </div>
           </motion.div>
@@ -397,7 +393,7 @@ export default function Home() {
               Our Core Services
             </h2>
             <p className="text-slate-400 font-inter text-sm sm:text-base">
-              Providing end-to-end technical surveys, mathematical CNS modeling, documentation, and regulatory licensing support for airspaces and helipads.
+              Providing end-to-end technical surveys, mathematical CNS modeling, documentation, and regulatory licensing support for airspaces.
             </p>
           </div>
 
@@ -431,15 +427,10 @@ export default function Home() {
                     {srv.desc}
                   </p>
                 </div>
-                {/* Specific link for Airport Height Clearance or Helipad if matching */}
+                {/* Specific link for Airport Height Clearance if matching */}
                 <div className="mt-4 pt-4 border-t border-slate-900 flex justify-end">
                   {srv.title.includes("Airport Height") ? (
                     <Link href="/airport-noc" className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors">
-                      <span>View Details</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </Link>
-                  ) : srv.title.includes("Helipad") ? (
-                    <Link href="/helipad-approval" className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors">
                       <span>View Details</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </Link>
@@ -637,7 +628,7 @@ export default function Home() {
               Frequently Asked Questions
             </span>
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
-              Airport NOC & Helipad Clearances FAQ
+              Airport NOC & Height Clearances FAQ
             </h2>
             <p className="text-slate-400 font-inter text-sm sm:text-base">
               Clear answers regarding obstacle rules, height boundaries, and consultancy services.

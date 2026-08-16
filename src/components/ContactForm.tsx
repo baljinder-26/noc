@@ -176,7 +176,7 @@ export default function ContactForm() {
                 value={form.message}
                 onChange={handleChange}
                 rows={4}
-                placeholder="Briefly describe your building/helipad height goals, nearest airport name, or survey requirements..."
+                placeholder="Briefly describe your building height goals, nearest airport name, or survey requirements..."
                 className={`w-full px-4 py-2.5 rounded-lg border text-sm font-inter focus:outline-none focus:ring-2 transition-all resize-none bg-slate-950/80 text-white ${
                   errors.message 
                     ? "border-red-500/50 focus:ring-red-950/50" 
