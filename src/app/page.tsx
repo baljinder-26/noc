@@ -119,17 +119,19 @@ export default function Home() {
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-36 sm:pt-40 lg:pt-44 pb-16">
         
         {/* Background Image & Grid Overlay */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
             src="/hero-bg.jpg"
             alt="Aviation Clearances High Rise Building Background"
             fill
             priority
-            className="object-cover opacity-35 filter contrast-105"
+            quality={95}
+            className="object-cover object-center opacity-85 scale-105 filter brightness-105 contrast-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/80" />
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] bg-[size:32px_32px] opacity-10" />
+          {/* Subtle gradient vignette to preserve readability without washing out the photo */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/70" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] bg-[size:32px_32px] opacity-10 pointer-events-none" />
         </div>
 
         {/* Hero Content */}
@@ -154,7 +156,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="font-poppins font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white leading-tight"
+                className="font-poppins font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white leading-tight drop-shadow-[0_4px_14px_rgba(0,0,0,0.95)]"
               >
                 India's Trusted Aviation Clearance & <span className="text-gradient-gold font-black">Airport Approval</span> Consultants
               </motion.h1>
@@ -163,7 +165,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="font-inter text-slate-400 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl"
+                className="font-inter text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]"
               >
                 Providing end-to-end consultancy for obtaining Airport Height Clearance approvals from AAI and IAF (where applicable), along with WGS-84 Surveys, Geo-Spatial Mapping, CNS/OLS Assessments, Aeronautical Studies, and NOCAS Portal Management.
               </motion.p>
