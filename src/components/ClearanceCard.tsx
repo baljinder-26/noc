@@ -12,7 +12,7 @@ export default function ClearanceCard() {
     },
     {
       title: "IAF Defense NOC",
-      desc: "Liaison & coordinate audits near military airbases.",
+      desc: "End-to-end offline filing & obtaining height clearance NOC.",
       icon: Target,
     },
     {
