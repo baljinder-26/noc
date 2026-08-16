@@ -118,19 +118,19 @@ export default function Home() {
       {/* Hero Section - Split Interactive Redesign */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-36 sm:pt-40 lg:pt-44 pb-16">
         
-        {/* Background Image & Grid Overlay */}
+        {/* Background Image & Soft Vignette */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
             src="/hero-bg.jpg"
             alt="Aviation Clearances High Rise Building Background"
             fill
             priority
-            quality={95}
-            className="object-cover object-center opacity-85 scale-105 filter brightness-105 contrast-110"
+            quality={100}
+            className="object-cover object-center opacity-100 filter brightness-110 contrast-105 saturate-110"
           />
-          {/* Subtle gradient vignette to preserve readability without washing out the photo */}
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/70" />
+          {/* Light gradient vignette to keep text readable while letting the bright photo show fully */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-950/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/50" />
         </div>
 
         {/* Hero Content */}
