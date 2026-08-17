@@ -7,29 +7,107 @@ export default function EsteemedClients() {
     {
       name: "Sebiz Skilling India",
       src: "/clients/sebiz.png",
-      scale: "scale-105 sm:scale-115",
-      padding: "p-4 sm:p-6"
+      scale: "scale-90 sm:scale-95",
     },
     {
       name: "Sohana Hospitals",
       src: "/clients/sohana.png",
-      scale: "scale-110 sm:scale-120",
-      padding: "p-3 sm:p-4"
     },
     {
       name: "Fortis Hospital Mohali",
       src: "/clients/fortis.png",
-      scale: "scale-140 sm:scale-160",
-      padding: "p-2 sm:p-3"
     },
+    {
+      name: "The Medallion 82",
+      src: "/clients/medallion.png",
+    },
+    {
+      name: "Ananta Aspire",
+      src: "/clients/ananta.png",
+    },
+    {
+      name: "Atlantis",
+      src: "/clients/atlantis.png",
+      scale: "scale-90 sm:scale-95",
+    },
+    {
+      name: "STJ Mohali Citi Centre",
+      src: "/clients/mohali_citi.png",
+    },
+    {
+      name: "Trishla",
+      src: "/clients/trishla.png",
+    },
+    {
+      name: "Motiaz",
+      src: "/clients/motiaz.png",
+      scale: "scale-90 sm:scale-95",
+    },
+    {
+      name: "Nirwana Group",
+      src: "/clients/nirwana.png",
+      scale: "scale-100 sm:scale-105",
+    },
+    {
+      name: "MDB",
+      src: "/clients/mdb.png",
+      scale: "scale-120 sm:scale-130",
+    },
+    {
+      name: "Vamana Group",
+      src: "/clients/vamana.png",
+      scale: "scale-120 sm:scale-130",
+    },
+    {
+      name: "CRA Developers",
+      src: "/clients/cra.png",
+      scale: "scale-120 sm:scale-130",
+    },
+    {
+      name: "KLV Group",
+      src: "/clients/klv.png",
+      scale: "scale-120 sm:scale-130",
+    },
+    {
+      name: "Martell Cognac",
+      src: "/clients/martell.png",
+      scale: "scale-100 sm:scale-110",
+    },
+    {
+      name: "SBP Group",
+      src: "/clients/sbp.png",
+      scale: "scale-100 sm:scale-110",
+    },
+    {
+      name: "JLPL",
+      src: "/clients/jlpl.png",
+      scale: "scale-100 sm:scale-110",
+    },
+    {
+      name: "Suncity",
+      src: "/clients/suncity.png",
+      scale: "scale-100 sm:scale-110",
+    },
+    {
+      name: "Amayra Trillium",
+      src: "/clients/amayra.png",
+      scale: "scale-100 sm:scale-110",
+    },
+    {
+      name: "Homeland Heights",
+      src: "/clients/homeland.png",
+      scale: "scale-100 sm:scale-110",
+    },
+    {
+      name: "Unity Group",
+      src: "/clients/unity.png",
+      scale: "scale-100 sm:scale-110",
+    },
+
   ];
 
-  // Repeat 6 times for seamless continuous marquee scrolling
+  // Repeat 2 times for seamless continuous marquee scrolling across 28 cards
   const logos = [
-    ...baseLogos,
-    ...baseLogos,
-    ...baseLogos,
-    ...baseLogos,
     ...baseLogos,
     ...baseLogos
   ];
@@ -45,7 +123,7 @@ export default function EsteemedClients() {
           OUR ESTEEMED CLIENTS
         </h2>
         <p className="text-slate-400 font-inter text-sm sm:text-base max-w-xl mx-auto">
-          Proud to assist leading developers, healthcare groups, and educational institutions with seamless Airport Height Clearances.
+          Proud to assist leading developers, healthcare groups, IT giants, corporate hubs, and institutions with seamless Airport Height Clearances.
         </p>
       </div>
 
@@ -60,14 +138,14 @@ export default function EsteemedClients() {
           {logos.map((client, idx) => (
             <div
               key={idx}
-              className="flex items-center justify-center bg-white rounded-2xl shadow-xl border border-slate-200/90 hover:shadow-2xl hover:scale-105 transition-all duration-300 w-64 sm:w-80 h-36 sm:h-44 shrink-0 group cursor-pointer overflow-hidden"
+              className="flex items-center justify-center bg-white p-3 sm:p-4 rounded-2xl shadow-xl border border-slate-200/90 hover:shadow-2xl hover:scale-105 transition-all duration-300 w-64 sm:w-84 h-36 sm:h-44 shrink-0 group cursor-pointer overflow-hidden"
             >
-              <div className={`relative w-full h-full flex items-center justify-center ${client.padding} ${client.scale}`}>
+              <div className={`relative w-full h-full flex items-center justify-center ${client.scale || "scale-95 sm:scale-100"}`}>
                 <Image
                   src={client.src}
                   alt={client.name}
                   fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             </div>
