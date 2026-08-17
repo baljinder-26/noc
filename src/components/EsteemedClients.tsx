@@ -4,12 +4,27 @@ import Image from "next/image";
 
 export default function EsteemedClients() {
   const baseLogos = [
-    { name: "Sebiz Skilling India", src: "/clients/sebiz.jpg" },
-    { name: "Sohana Hospitals", src: "/clients/sohana.jpg" },
-    { name: "Fortis Hospital Mohali", src: "/clients/fortis.jpg" },
+    {
+      name: "Sebiz Skilling India",
+      src: "/clients/sebiz.png",
+      scale: "scale-105 sm:scale-115",
+      padding: "p-4 sm:p-6"
+    },
+    {
+      name: "Sohana Hospitals",
+      src: "/clients/sohana.png",
+      scale: "scale-110 sm:scale-120",
+      padding: "p-3 sm:p-4"
+    },
+    {
+      name: "Fortis Hospital Mohali",
+      src: "/clients/fortis.png",
+      scale: "scale-140 sm:scale-160",
+      padding: "p-2 sm:p-3"
+    },
   ];
 
-  // Duplicate 6 times to ensure seamless infinite looping on all screen sizes
+  // Repeat 6 times for seamless continuous marquee scrolling
   const logos = [
     ...baseLogos,
     ...baseLogos,
@@ -45,14 +60,14 @@ export default function EsteemedClients() {
           {logos.map((client, idx) => (
             <div
               key={idx}
-              className="flex items-center justify-center bg-white px-6 py-5 rounded-2xl shadow-xl border border-slate-200 hover:shadow-2xl hover:scale-105 transition-all duration-300 w-64 sm:w-80 h-36 sm:h-44 shrink-0 group cursor-pointer"
+              className="flex items-center justify-center bg-white rounded-2xl shadow-xl border border-slate-200/90 hover:shadow-2xl hover:scale-105 transition-all duration-300 w-64 sm:w-80 h-36 sm:h-44 shrink-0 group cursor-pointer overflow-hidden"
             >
-              <div className="relative w-full h-full flex items-center justify-center scale-110 sm:scale-125">
+              <div className={`relative w-full h-full flex items-center justify-center ${client.padding} ${client.scale}`}>
                 <Image
                   src={client.src}
                   alt={client.name}
                   fill
-                  className="object-contain p-1 group-hover:scale-105 transition-transform duration-300"
+                  className="object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
