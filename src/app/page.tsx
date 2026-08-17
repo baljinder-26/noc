@@ -33,7 +33,6 @@ import InteractiveMap from "@/components/InteractiveMap";
 import FaqSection from "@/components/FaqSection";
 import ContactForm from "@/components/ContactForm";
 import ClearanceCard from "@/components/ClearanceCard";
-import HeightCalculator from "@/components/HeightCalculator";
 import NocDetailsModal from "@/components/NocDetailsModal";
 import SiteEvaluationModal from "@/components/SiteEvaluationModal";
 import Wgs84SurveyModal from "@/components/Wgs84SurveyModal";
@@ -483,12 +482,7 @@ export default function Home() {
         />
       </section>
 
-      {/* Interactive Height Clearance Calculator Widget section */}
-      <section className="py-24 bg-[#0a0f1d] border-t border-b border-slate-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <HeightCalculator />
-        </div>
-      </section>
+
 
       {/* Airport Height Clearance Info Section */}
       <section className="py-24 bg-slate-950">
