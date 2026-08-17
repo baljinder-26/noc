@@ -28,7 +28,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Counter from "@/components/Counter";
 import ProcessWizard from "@/components/ProcessWizard";
-import ProjectPortfolio from "@/components/ProjectPortfolio";
+import EsteemedClients from "@/components/EsteemedClients";
 import InteractiveMap from "@/components/InteractiveMap";
 import FaqSection from "@/components/FaqSection";
 import ContactForm from "@/components/ContactForm";
@@ -580,23 +580,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-24 bg-slate-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
-              Consultancy Portfolio
-            </span>
-            <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
-              Projects Successfully Delivered
-            </h2>
-            <p className="text-slate-400 font-inter text-sm sm:text-base">
-              Highlighting height clearances, coordinate mapping and FAA/AAI certifications secured for various build structures.
-            </p>
-          </div>
-
-          <ProjectPortfolio />
-        </div>
+      {/* Esteemed Clients Section */}
+      <section id="clients" className="py-24 bg-slate-950">
+        <EsteemedClients />
       </section>
 
       {/* Coverage Section */}
