@@ -130,6 +130,7 @@ export default function Home() {
             src="/hero-bg.jpg"
             alt="Aviation Clearances High Rise Building Background"
             fill
+            sizes="100vw"
             priority
             quality={100}
             className="object-cover object-[68%_20%] opacity-100 filter brightness-115 contrast-105 saturate-110"
@@ -289,6 +290,7 @@ export default function Home() {
                 src="/service-ref.png"
                 alt="Obstacle limitation blueprint and runways"
                 fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover animate-float-airplane"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
