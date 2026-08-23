@@ -55,22 +55,68 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
-    // Simulate API Submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setForm({
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
       });
-    }, 1500);
+
+      if (res.ok) {
+        setIsSuccess(true);
+        setForm({ name: "", phone: "", email: "", message: "" });
+      } else {
+        // Fallback directly via FormSubmit client-side
+        await fetch("https://formsubmit.co/ajax/baljindersingh260304@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            _subject: `New Clearance Enquiry from ${form.name}`,
+            "Full Name": form.name,
+            "Mobile Number": form.phone,
+            "Email Address": form.email,
+            "Enquiry Details": form.message,
+            _template: "table",
+          }),
+        });
+        setIsSuccess(true);
+        setForm({ name: "", phone: "", email: "", message: "" });
+      }
+    } catch (err) {
+      try {
+        await fetch("https://formsubmit.co/ajax/baljindersingh260304@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            _subject: `New Clearance Enquiry from ${form.name}`,
+            "Full Name": form.name,
+            "Mobile Number": form.phone,
+            "Email Address": form.email,
+            "Enquiry Details": form.message,
+            _template: "table",
+          }),
+        });
+        setIsSuccess(true);
+        setForm({ name: "", phone: "", email: "", message: "" });
+      } catch (fallbackErr) {
+        alert("Unable to send enquiry. Please call +91 95016 89445 or email highriseapprovals@gmail.com.");
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
