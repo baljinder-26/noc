@@ -62,61 +62,28 @@ export default function ContactForm() {
 
     setIsSubmitting(true);
     try {
-      const res = await fetch("/api/contact", {
+      const formData = new FormData();
+      formData.append("name", form.name);
+      formData.append("phone", form.phone);
+      formData.append("email", form.email);
+      formData.append("message", form.message);
+      formData.append("_subject", `New Airport Clearance Enquiry from ${form.name}`);
+      formData.append("_captcha", "false");
+      formData.append("_template", "table");
+
+      await fetch("https://formsubmit.co/ajax/highriseapprovals@gmail.com", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(form),
+        body: formData,
       });
 
-      if (res.ok) {
-        setIsSuccess(true);
-        setForm({ name: "", phone: "", email: "", message: "" });
-      } else {
-        const params = new URLSearchParams();
-        params.append("name", form.name);
-        params.append("phone", form.phone);
-        params.append("email", form.email);
-        params.append("message", form.message);
-        params.append("_subject", `New Clearance Enquiry from ${form.name}`);
-        params.append("_captcha", "false");
-
-        await fetch("https://formsubmit.co/ajax/highriseapprovals@gmail.com", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            Accept: "application/json",
-          },
-          body: params.toString(),
-        });
-        setIsSuccess(true);
-        setForm({ name: "", phone: "", email: "", message: "" });
-      }
+      setIsSuccess(true);
+      setForm({ name: "", phone: "", email: "", message: "" });
     } catch (err) {
-      const params = new URLSearchParams();
-      params.append("name", form.name);
-      params.append("phone", form.phone);
-      params.append("email", form.email);
-      params.append("message", form.message);
-      params.append("_subject", `New Clearance Enquiry from ${form.name}`);
-      params.append("_captcha", "false");
-
-      try {
-        await fetch("https://formsubmit.co/ajax/highriseapprovals@gmail.com", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            Accept: "application/json",
-          },
-          body: params.toString(),
-        });
-        setIsSuccess(true);
-        setForm({ name: "", phone: "", email: "", message: "" });
-      } catch (fallbackErr) {
-        setIsSuccess(true);
-        setForm({ name: "", phone: "", email: "", message: "" });
-      }
+      setIsSuccess(true);
+      setForm({ name: "", phone: "", email: "", message: "" });
     } finally {
       setIsSubmitting(false);
     }
