@@ -24,13 +24,13 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-400 font-inter pt-16 pb-8 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10 mb-12">
           {/* Brand Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 md:col-span-12 lg:col-span-4">
             <Link href="/#home" className="block">
-              <Logo size={46} showText={true} textSize="md" />
+              <Logo size={42} showText={true} textSize="sm" />
             </Link>
-            <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+            <p className="text-sm text-slate-400 mt-2 leading-relaxed max-w-sm">
               Complete Aviation Clearance & Airport Approval Consultancy. Providing high-precision technical surveys, obstacle analyses, and professional liaison services for clearances across India.
             </p>
             <div className="flex items-center space-x-2 text-xs text-secondary-light font-medium bg-slate-900 py-1.5 px-3 rounded border border-white/5 w-fit">
@@ -40,18 +40,18 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="md:col-span-4 lg:col-span-2">
             <h3 className="font-poppins font-semibold text-sm tracking-wider text-white uppercase mb-4 border-b border-slate-900 pb-2 w-fit">
               Quick Links
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
                     className="text-slate-400 hover:text-secondary text-sm flex items-center space-x-1.5 transition-colors group"
                   >
-                    <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-all text-secondary" />
+                    <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-all text-secondary shrink-0" />
                     <span>{link.name}</span>
                   </Link>
                 </li>
@@ -60,18 +60,18 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="md:col-span-4 lg:col-span-3">
             <h3 className="font-poppins font-semibold text-sm tracking-wider text-white uppercase mb-4 border-b border-slate-900 pb-2 w-fit">
               Our Services
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {mainServices.map((service) => (
                 <li key={service.name}>
                   <Link
                     href={service.href}
                     className="text-slate-400 hover:text-secondary text-sm flex items-center space-x-1.5 transition-colors group"
                   >
-                    <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-all text-secondary" />
+                    <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-all text-secondary shrink-0" />
                     <span>{service.name}</span>
                   </Link>
                 </li>
@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Details */}
-          <div className="space-y-4">
+          <div className="space-y-4 md:col-span-4 lg:col-span-3">
             <h3 className="font-poppins font-semibold text-sm tracking-wider text-white uppercase border-b border-slate-900 pb-2 w-fit">
               Contact & Enquiries
             </h3>
