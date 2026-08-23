@@ -299,7 +299,7 @@ export default function EsteemedClients() {
       {/* Section Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center md:text-left">
         <div className="space-y-3 max-w-2xl">
-          <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
+          <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
             Trusted Partners
           </span>
           <h2 className="font-poppins font-extrabold text-3xl sm:text-5xl text-white tracking-wider uppercase">

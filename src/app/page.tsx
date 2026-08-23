@@ -256,7 +256,7 @@ export default function Home() {
               variants={fadeInUp}
               className="lg:col-span-7 space-y-6"
             >
-              <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+              <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
                 Aviation clearance experts
               </span>
               <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white leading-tight">
@@ -349,7 +349,7 @@ export default function Home() {
       <section className="py-24 bg-[#0a0f1d]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+            <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
               Why developers trust us
             </span>
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
@@ -395,7 +395,7 @@ export default function Home() {
       <section id="services" className="py-24 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+            <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
               Aviation Consultancy Solutions
             </span>
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
@@ -492,7 +492,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Info Left */}
             <div className="lg:col-span-5 space-y-6">
-              <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+              <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
                 Regulatory Background
               </span>
               <h2 className="font-poppins font-extrabold text-3xl text-white leading-tight">
@@ -567,7 +567,7 @@ export default function Home() {
       <section className="py-24 bg-[#0a0f1d]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+            <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
               Clearance Workflow
             </span>
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
@@ -591,7 +591,7 @@ export default function Home() {
       <section id="coverage" className="py-24 bg-[#0a0f1d]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+            <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
               Active Regional Operations
             </span>
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
@@ -610,7 +610,7 @@ export default function Home() {
       <section className="py-24 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+            <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
               Client Feedback
             </span>
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
@@ -647,7 +647,7 @@ export default function Home() {
       <section className="py-24 bg-[#0a0f1d]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+            <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
               Frequently Asked Questions
             </span>
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
@@ -669,7 +669,7 @@ export default function Home() {
             {/* Contact Details Left */}
             <div className="lg:col-span-5 space-y-8">
               <div>
-                <span className="text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1 px-3.5 rounded-full border border-secondary/20">
+                <span className="inline-block mb-3 text-xs font-poppins font-bold text-secondary tracking-widest uppercase bg-secondary/10 py-1.5 px-4 rounded-full border border-secondary/20">
                   Contact details
                 </span>
                 <h2 className="font-poppins font-extrabold text-3xl text-white mt-3">
