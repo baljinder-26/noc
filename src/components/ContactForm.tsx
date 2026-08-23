@@ -27,9 +27,10 @@ export default function ContactForm() {
     const tempErrors: Partial<FormState> = {};
     if (!form.name.trim()) tempErrors.name = "Full name is required";
     
+    const phoneDigits = form.phone.trim().replace(/\D/g, "");
     if (!form.phone.trim()) {
       tempErrors.phone = "Phone number is required";
-    } else if (!/^\d{10}$/.test(form.phone.trim().replace(/\D/g, ""))) {
+    } else if (phoneDigits.length < 10 || phoneDigits.length > 13) {
       tempErrors.phone = "Enter a valid 10-digit phone number";
     }
     
