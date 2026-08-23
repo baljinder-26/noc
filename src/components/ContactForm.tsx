@@ -82,7 +82,7 @@ export default function ContactForm() {
         params.append("_subject", `New Clearance Enquiry from ${form.name}`);
         params.append("_captcha", "false");
 
-        await fetch("https://formsubmit.co/ajax/baljindersingh260304@gmail.com", {
+        await fetch("https://formsubmit.co/ajax/highriseapprovals@gmail.com", {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -103,7 +103,7 @@ export default function ContactForm() {
       params.append("_captcha", "false");
 
       try {
-        await fetch("https://formsubmit.co/ajax/baljindersingh260304@gmail.com", {
+        await fetch("https://formsubmit.co/ajax/highriseapprovals@gmail.com", {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",

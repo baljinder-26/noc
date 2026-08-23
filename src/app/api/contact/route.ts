@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     formData.append("_captcha", "false");
     formData.append("_template", "table");
 
-    const response = await fetch("https://formsubmit.co/ajax/baljindersingh260304@gmail.com", {
+    const response = await fetch("https://formsubmit.co/ajax/highriseapprovals@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
