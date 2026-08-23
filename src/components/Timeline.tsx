@@ -26,61 +26,43 @@ export default function Timeline() {
     {
       number: 1,
       title: "Project Consultation",
-      desc: "Initial meeting to discuss building height requirements, location coordinates, and client objectives.",
+      desc: "Initial strategic consultation to discuss building height goals, site coordinates, and proximity to civil/military airports.",
       icon: PhoneCall
     },
     {
       number: 2,
-      title: "Site Evaluation",
-      desc: "Aviation feasibility analysis checking nearby airports, radar stations, and potential height restrictions.",
-      icon: MapPin
-    },
-    {
-      number: 3,
-      title: "Drone Survey",
-      desc: "Professional drone mapping to capture aerial data, site topography, and surrounding structures.",
-      icon: Target
-    },
-    {
-      number: 4,
-      title: "Geo-Spatial Survey",
-      desc: "High precision mapping of physical attributes to meet geospatial requirements for aviation compliance.",
+      title: "WGS / Drone / Geo-Spatial Survey",
+      desc: "High-precision site mapping incorporating dual-frequency DGPS WGS-84 coordinate survey and UAV drone terrain sweeps.",
       icon: Globe
     },
     {
-      number: 5,
-      title: "WGS-84 Survey",
-      desc: "Mandatory GPS coordinate survey in WGS-84 format using dual frequency DGPS to secure precise values.",
-      icon: Compass
-    },
-    {
-      number: 6,
+      number: 3,
       title: "CNS / OLS Assessment",
-      desc: "Detailed evaluation of Obstacle Limitation Surfaces (OLS) and Communication, Navigation & Surveillance (CNS) ranges.",
+      desc: "Mathematical calculation of Communication, Navigation & Surveillance (CNS) ranges and Obstacle Limitation Surface (OLS) envelopes.",
       icon: Activity
     },
     {
-      number: 7,
-      title: "Documentation Preparation",
-      desc: "Drafting of structural drawings, undertaking certificates, site maps, and required technical reports.",
+      number: 4,
+      title: "Documentation",
+      desc: "Compiling architectural elevation drawings, structural height declarations, site survey certificates, and legal undertakings.",
       icon: FileText
     },
     {
-      number: 8,
+      number: 5,
       title: "Application Submission",
-      desc: "Uploading dossiers to AAI NOCAS portal or IAF clearance cells with zero errors to prevent processing delays.",
+      desc: "Accurate online drafting and file submission to the AAI NOCAS portal or IAF/Defence clearance cells with zero error tolerance.",
       icon: UploadCloud
     },
     {
-      number: 9,
-      title: "Coordination with Authorities",
-      desc: "Continuous follow-up and representation of the project parameters during board hearings and departmental queries.",
+      number: 6,
+      title: "Coordination",
+      desc: "Continuous liaison with aviation authorities, responding to board technical queries, and representing your case at committee hearings.",
       icon: Users
     },
     {
-      number: 10,
-      title: "Approval Assistance",
-      desc: "Successful procurement and hand-over of the Airport Height Clearance NOC letter.",
+      number: 7,
+      title: "Airport Approval",
+      desc: "Successful procurement, verification, and formal handover of the official Airport Height Clearance NOC letter.",
       icon: Award
     }
   ];

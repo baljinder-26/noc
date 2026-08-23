@@ -571,7 +571,7 @@ export default function Home() {
               Clearance Workflow
             </span>
             <h2 className="font-poppins font-extrabold text-3xl sm:text-4xl text-white">
-              Our 10-Step Process
+              Our 7-Step Process
             </h2>
             <p className="text-slate-400 font-inter text-sm sm:text-base">
               Explore our structured interactive pipeline representing key tasks and timelines, from meeting to NOC handover.

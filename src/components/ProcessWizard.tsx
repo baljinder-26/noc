@@ -34,82 +34,58 @@ export default function ProcessWizard() {
     {
       number: 1,
       title: "Project Consultation",
-      desc: "We discuss your building height requirements, proposed site parameters, and nearest airports.",
+      desc: "Initial strategic consultation to assess your building height requirements, location coordinates, proposed site parameters, and nearest civil/military airport zones.",
       icon: PhoneCall,
       duration: "1 - 2 Days",
-      checklist: ["Analyze building blueprints", "Review master plan height goals", "Establish liaison guidelines"]
+      checklist: ["Analyze building blueprints & elevation goals", "Identify nearest AAI & IAF airport safeguarding grids", "Formulate liaison plan & approval roadmap"]
     },
     {
       number: 2,
-      title: "Site Evaluation",
-      desc: "Our team assesses nearby airports, military radars, and OLS safety charts relative to your site.",
-      icon: MapPin,
+      title: "WGS / Drone / Geo-Spatial Survey",
+      desc: "High-precision site evaluation using dual-frequency DGPS WGS-84 survey, UAV drone mapping, and detailed geo-spatial terrain modeling.",
+      icon: Globe,
       duration: "2 - 3 Days",
-      checklist: ["Crosscheck AAI radar grids", "Map nearby civilian runway markers", "Verify IAF notification zones"]
+      checklist: ["Deploy dual-frequency DGPS for WGS-84 coordinates", "Execute UAV drone aerial mapping of site topography", "Export verified geo-spatial CAD data & WGS-84 certificate"]
     },
     {
       number: 3,
-      title: "Drone Survey",
-      desc: "If required, we conduct professional drone sweeps to map surrounding heights and physical attributes.",
-      icon: Target,
-      duration: "1 - 2 Days",
-      checklist: ["Deploy high-precision UAVs", "Capture 3D point cloud elevations", "Identify tall neighbor shielding"]
+      title: "CNS / OLS Assessment",
+      desc: "Advanced mathematical calculation evaluating Communication, Navigation & Surveillance (CNS) ranges and Obstacle Limitation Surface (OLS) penetration envelopes.",
+      icon: Activity,
+      duration: "3 - 5 Days",
+      checklist: ["Compute DVOR, radar & ILS safety clearance zones", "Analyze runway approach & take-off obstacle surfaces", "Calculate permissible shielding benefit from surrounding structures"]
     },
     {
       number: 4,
-      title: "Geo-Spatial Survey",
-      desc: "We create digital maps reflecting topography, obstacles, and geographical attributes of the terrain.",
-      icon: Globe,
-      duration: "2 Days",
-      checklist: ["Generate topographic contour charts", "Map absolute elevation zones", "Export CAD layout data"]
+      title: "Documentation",
+      desc: "Comprehensive preparation and auditing of architectural elevation drawings, structural height declarations, site survey certificates, and legal undertakings.",
+      icon: FileText,
+      duration: "2 - 4 Days",
+      checklist: ["Draft architect & structural engineer height undertakings", "Compile verified DGPS coordinate survey sheets", "Prepare complete technical clearance dossier"]
     },
     {
       number: 5,
-      title: "WGS-84 Survey",
-      desc: "Mandatory coordinate verification utilizing high-precision dual frequency DGPS under AAI standards.",
-      icon: Compass,
-      duration: "1 - 2 Days",
-      checklist: ["Deploy DGPS ground beacons", "Extract sub-centimeter coordinates", "Formulate WGS-84 certificate"]
+      title: "Application Submission",
+      desc: "Accurate online drafting and file submission to the AAI NOCAS portal or military defense cells with zero error tolerance to avoid delays.",
+      icon: UploadCloud,
+      duration: "1 Day",
+      checklist: ["Upload verified files to AAI NOCAS portal", "Dispatch physical defense dossiers to relevant IAF station", "Track online file dispatch ID & registration status"]
     },
     {
       number: 6,
-      title: "CNS / OLS Assessment",
-      desc: "Mathematical calculation of radar signal blockages and OLS plane penetrations for building envelopes.",
-      icon: Activity,
-      duration: "3 - 5 Days",
-      checklist: ["Compute DVOR and radar safety clearances", "Analyze runway approach envelopes", "Identify permissible shielding benefit"]
+      title: "Coordination",
+      desc: "Continuous liaison with civil aviation and military authorities, responding to board technical queries, and representing your case at departmental hearings.",
+      icon: Users,
+      duration: "2 - 6 Weeks",
+      checklist: ["Liaison with AAI NOC cell & IAF station authorities", "Resolve technical coordinate or height clarifications", "Represent case parameters at appellate & board hearings"]
     },
     {
       number: 7,
-      title: "Documentation Preparation",
-      desc: "Compiling of structural certificates, layout coordinates, undertakings, and engineering blueprints.",
-      icon: FileText,
-      duration: "2 - 4 Days",
-      checklist: ["Draft architect undertaking certificate", "Compile coordinate survey sheets", "Verify structural height declaration"]
-    },
-    {
-      number: 8,
-      title: "Application Submission",
-      desc: "Accurate online drafting and file submission to civil AAI NOCAS portal or military defense files.",
-      icon: UploadCloud,
-      duration: "1 Day",
-      checklist: ["Upload documents to AAI NOCAS", "Submit defense file files to IAF cell", "Track file dispatch ID"]
-    },
-    {
-      number: 9,
-      title: "Coordination with Authorities",
-      desc: "Liaison checks, responding to clarifications, and attending appellate hearings representing your files.",
-      icon: Users,
-      duration: "4 - 8 Weeks",
-      checklist: ["Respond to AAI coordinate queries", "Liaison with IAF regional station", "Represent case in Appellate Committee"]
-    },
-    {
-      number: 10,
-      title: "Approval Assistance",
-      desc: "Successfully securing the Airport Height Clearance NOC, ready for local developers.",
+      title: "Airport Approval",
+      desc: "Successful procurement, verification, and formal handover of the official Airport Height Clearance NOC letter required for building sanction approvals.",
       icon: Award,
       duration: "1 Day",
-      checklist: ["Receive final height clearance letter", "Verify coordinate matches on certificate", "Deliver approved NOC to developer client"]
+      checklist: ["Receive official Airport Height Clearance NOC certificate", "Verify authorized elevation limits & site coordinates", "Deliver approved NOC letter to developer client"]
     }
   ];
 
@@ -135,23 +111,23 @@ export default function ProcessWizard() {
             <button
               key={st.number}
               onClick={() => setActiveStep(idx)}
-              className={`w-full text-left p-3 rounded-lg flex items-center gap-3 transition-all shrink-0 md:shrink border ${
+              className={`w-full text-left p-3.5 rounded-lg flex items-center gap-3 transition-all shrink-0 md:shrink border ${
                 isActive 
                   ? "bg-gradient-gold text-slate-950 border-secondary shadow-md font-bold" 
                   : "bg-slate-900/40 text-slate-300 border-white/5 hover:border-secondary/20 hover:bg-slate-900"
               }`}
             >
-              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${isActive ? 'bg-slate-950 text-secondary font-bold' : 'bg-slate-800 text-slate-500'}`}>
+              <span className={`w-7 h-7 rounded-full flex items-center justify-center text-sm ${isActive ? 'bg-slate-950 text-secondary font-bold' : 'bg-slate-800 text-slate-400'}`}>
                 {st.number}
               </span>
-              <span className="text-xs font-poppins truncate max-w-[120px] md:max-w-none">{st.title}</span>
+              <span className="text-sm font-poppins font-medium truncate max-w-[140px] md:max-w-none">{st.title}</span>
             </button>
           );
         })}
       </div>
 
       {/* Main Panel Content */}
-      <div className="flex-1 flex flex-col justify-between min-h-[300px]">
+      <div className="flex-1 flex flex-col justify-between min-h-[320px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeStep}
@@ -165,41 +141,41 @@ export default function ProcessWizard() {
             <div className="flex items-center justify-between border-b border-slate-900 pb-4">
               <div className="flex items-center space-x-3">
                 <div className="p-3 bg-slate-900 text-secondary rounded-xl shadow-inner border border-white/5">
-                  <Icon className="w-6 h-6" />
+                  <Icon className="w-7 h-7" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-poppins font-bold text-secondary uppercase tracking-widest block">
-                    STEP {currentStep.number} OF 10
+                  <span className="text-xs font-poppins font-bold text-secondary uppercase tracking-widest block">
+                    STEP {currentStep.number} OF 7
                   </span>
-                  <h3 className="font-poppins font-extrabold text-lg sm:text-xl text-white">
+                  <h3 className="font-poppins font-extrabold text-xl sm:text-2xl text-white">
                     {currentStep.title}
                   </h3>
                 </div>
               </div>
               <div className="text-right">
-                <span className="text-[10px] font-poppins font-bold text-slate-500 block uppercase tracking-wide">
+                <span className="text-xs font-poppins font-bold text-slate-400 block uppercase tracking-wide">
                   EST. DURATION
                 </span>
-                <span className="text-xs font-bold text-slate-950 bg-secondary py-1 px-2.5 rounded-full border border-secondary/20 font-mono">
+                <span className="text-sm font-bold text-slate-950 bg-secondary py-1 px-3 rounded-full border border-secondary/20 font-mono">
                   {currentStep.duration}
                 </span>
               </div>
             </div>
 
             {/* Description */}
-            <p className="text-sm sm:text-base text-slate-400 leading-relaxed font-inter">
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-inter">
               {currentStep.desc}
             </p>
 
             {/* Tasks checklist */}
-            <div className="space-y-3 bg-slate-950/60 p-5 rounded-xl border border-slate-900">
-              <h4 className="text-xs font-poppins font-bold text-slate-300 uppercase tracking-wider mb-2">
+            <div className="space-y-3.5 bg-slate-950/60 p-5 sm:p-6 rounded-xl border border-slate-900">
+              <h4 className="text-sm font-poppins font-bold text-slate-200 uppercase tracking-wider mb-2">
                 Operational Checklist
               </h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {currentStep.checklist.map((task, index) => (
-                  <li key={index} className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-400">
-                    <CheckSquare className="w-4.5 h-4.5 text-secondary shrink-0" />
+                  <li key={index} className="flex items-center gap-3 text-sm sm:text-base text-slate-300">
+                    <CheckSquare className="w-5 h-5 text-secondary shrink-0" />
                     <span>{task}</span>
                   </li>
                 ))}
