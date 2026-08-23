@@ -252,7 +252,7 @@ export default function EsteemedClients() {
 
     const autoScroll = () => {
       if (scrollRef.current && !isDragging.current && !isHovered.current) {
-        scrollRef.current.scrollLeft += 4.0;
+        scrollRef.current.scrollLeft += 5.0;
         const halfScroll = scrollRef.current.scrollWidth / 2;
         if (scrollRef.current.scrollLeft >= halfScroll) {
           scrollRef.current.scrollLeft -= halfScroll;
