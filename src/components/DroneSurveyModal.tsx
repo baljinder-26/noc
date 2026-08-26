@@ -197,10 +197,9 @@ export default function DroneSurveyModal({ isOpen, onClose }: DroneSurveyModalPr
             {/* Modal Footer */}
             <div className="flex flex-col sm:flex-row items-center justify-between px-6 py-4 border-t border-slate-800 bg-slate-950/90 gap-3">
               <div className="flex items-center space-x-4 text-xs font-mono text-slate-400">
-                <a href="tel:9501689445" className="flex items-center gap-2 hover:text-secondary transition-colors font-bold text-white">
-                  <span>Contact</span>
+                <a href="tel:9501689445" className="flex items-center gap-1.5 hover:text-secondary transition-colors">
                   <Phone className="w-3.5 h-3.5 text-secondary animate-pulse" />
-                  <span className="font-normal text-slate-300">+91 95016 89445</span>
+                  <span>+91 95016 89445</span>
                 </a>
                 <span className="hidden sm:inline text-slate-700">|</span>
                 <span className="hidden sm:inline flex items-center gap-1 text-emerald-400 font-bold text-[10px]">
