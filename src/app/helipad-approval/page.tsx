@@ -7,7 +7,7 @@ export default function HelipadApprovalPage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/airport-noc");
+    router.replace("/");
   }, [router]);
 
   return null;

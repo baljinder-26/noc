@@ -7,7 +7,7 @@ export default function AirportNocPage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/#services");
+    router.replace("/");
   }, [router]);
 
   return null;
