@@ -243,6 +243,27 @@ export default function EsteemedClients() {
       src: "/clients/hbchrc.png",
       scale: "scale-90 sm:scale-95",
     },
+    {
+      name: "Gulnaar Realty",
+      src: "/clients/gulnaar_realty.jpg",
+      scale: "scale-130 sm:scale-145",
+      bg: "bg-[#871805] border border-red-900/40 shadow-red-950/40",
+    },
+    {
+      name: "KRPL Group",
+      src: "/clients/krpl.jpg",
+      scale: "scale-95 sm:scale-100",
+    },
+    {
+      name: "SKA Group",
+      src: "/clients/ska.png",
+      scale: "scale-95 sm:scale-100",
+    },
+    {
+      name: "Goyal Infra",
+      src: "/clients/goyal_infra.jpg",
+      scale: "scale-95 sm:scale-100",
+    },
   ];
 
   const displayLogos = [...baseLogos, ...baseLogos];

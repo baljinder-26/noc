@@ -36,6 +36,12 @@ import ClearanceCard from "@/components/ClearanceCard";
 import NocDetailsModal from "@/components/NocDetailsModal";
 import SiteEvaluationModal from "@/components/SiteEvaluationModal";
 import Wgs84SurveyModal from "@/components/Wgs84SurveyModal";
+import DroneSurveyModal from "@/components/DroneSurveyModal";
+import CnsOlsAssessmentModal from "@/components/CnsOlsAssessmentModal";
+import NocasPortalModal from "@/components/NocasPortalModal";
+import AeronauticalStudiesModal from "@/components/AeronauticalStudiesModal";
+import RenewalRevalidationModal from "@/components/RenewalRevalidationModal";
+import AppealsRepresentationModal from "@/components/AppealsRepresentationModal";
 
 // Animation Variants for Scroll Reveals
 const fadeInUp = {
@@ -57,6 +63,12 @@ export default function Home() {
   const [isNocModalOpen, setIsNocModalOpen] = useState(false);
   const [isSiteEvalModalOpen, setIsSiteEvalModalOpen] = useState(false);
   const [isWgsModalOpen, setIsWgsModalOpen] = useState(false);
+  const [isDroneModalOpen, setIsDroneModalOpen] = useState(false);
+  const [isCnsModalOpen, setIsCnsModalOpen] = useState(false);
+  const [isNocasPortalModalOpen, setIsNocasPortalModalOpen] = useState(false);
+  const [isAeroModalOpen, setIsAeroModalOpen] = useState(false);
+  const [isRenewalModalOpen, setIsRenewalModalOpen] = useState(false);
+  const [isAppealsModalOpen, setIsAppealsModalOpen] = useState(false);
 
   // Why Choose Us list
   const whyChooseUs = [
@@ -462,6 +474,54 @@ export default function Home() {
                       <span>View Details</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </button>
+                  ) : srv.title.includes("Drone") ? (
+                    <button 
+                      onClick={() => setIsDroneModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  ) : srv.title.includes("CNS") || srv.title.includes("OLS") ? (
+                    <button 
+                      onClick={() => setIsCnsModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  ) : srv.title.includes("NOCAS Portal") ? (
+                    <button 
+                      onClick={() => setIsNocasPortalModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  ) : srv.title.includes("Aeronautical") ? (
+                    <button 
+                      onClick={() => setIsAeroModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  ) : srv.title.includes("Renewal") || srv.title.includes("Revalidation") ? (
+                    <button 
+                      onClick={() => setIsRenewalModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  ) : srv.title.includes("Appeals") || srv.title.includes("Representation") ? (
+                    <button 
+                      onClick={() => setIsAppealsModalOpen(true)} 
+                      className="text-xs font-poppins font-bold text-secondary hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
                   ) : null}
                 </div>
               </motion.div>
@@ -481,6 +541,30 @@ export default function Home() {
         <Wgs84SurveyModal 
           isOpen={isWgsModalOpen} 
           onClose={() => setIsWgsModalOpen(false)} 
+        />
+        <DroneSurveyModal 
+          isOpen={isDroneModalOpen} 
+          onClose={() => setIsDroneModalOpen(false)} 
+        />
+        <CnsOlsAssessmentModal 
+          isOpen={isCnsModalOpen} 
+          onClose={() => setIsCnsModalOpen(false)} 
+        />
+        <NocasPortalModal 
+          isOpen={isNocasPortalModalOpen} 
+          onClose={() => setIsNocasPortalModalOpen(false)} 
+        />
+        <AeronauticalStudiesModal 
+          isOpen={isAeroModalOpen} 
+          onClose={() => setIsAeroModalOpen(false)} 
+        />
+        <RenewalRevalidationModal 
+          isOpen={isRenewalModalOpen} 
+          onClose={() => setIsRenewalModalOpen(false)} 
+        />
+        <AppealsRepresentationModal 
+          isOpen={isAppealsModalOpen} 
+          onClose={() => setIsAppealsModalOpen(false)} 
         />
       </section>
 
