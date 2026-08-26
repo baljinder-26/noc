@@ -65,8 +65,9 @@ export default function Navbar() {
           <div className="hidden 2xl:flex items-center space-x-4 shrink-0">
             <a
               href="tel:9501689445"
-              className="flex items-center space-x-2 font-inter font-bold text-xs 2xl:text-sm transition-colors text-white hover:text-[#D9A928] whitespace-nowrap drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]"
+              className="flex items-center gap-2 font-inter font-bold text-xs 2xl:text-sm transition-colors text-white hover:text-[#D9A928] whitespace-nowrap drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]"
             >
+              <span>Contact</span>
               <Phone className="w-4 h-4 text-[#D9A928] animate-pulse" />
               <span>+91 95016 89445</span>
             </a>
