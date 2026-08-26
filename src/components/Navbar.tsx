@@ -48,7 +48,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden 2xl:flex items-center space-x-5 2xl:space-x-7">
+          <nav className="hidden 2xl:flex items-center space-x-5 2xl:space-x-7 mr-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -62,7 +62,7 @@ export default function Navbar() {
           </nav>
 
           {/* Quick Consultation Button */}
-          <div className="hidden 2xl:flex items-center space-x-4 shrink-0">
+          <div className="hidden 2xl:flex items-center space-x-5 shrink-0 pl-6 border-l border-white/15">
             <a
               href="tel:9501689445"
               className="flex items-center space-x-2 font-inter font-bold text-xs 2xl:text-sm transition-colors text-white hover:text-[#D9A928] whitespace-nowrap drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]"
