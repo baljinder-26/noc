@@ -107,7 +107,7 @@ export default function Home() {
     {
       quote: "High Rise Approvals made a very complex IAF and AAI clearance process look simple. Their technical drone survey was highly professional, and they got our height clearance NOC without a single query from the board.",
       author: "Umang Jindal",
-      role: "CEO, Homeland Group"
+      role: "CEO / MD, Homeland Group"
     },
     {
       quote: "For our multi-specialty hospital tower, obtaining the Airport Height NOC was critical for construction. The team provided expert aeronautical survey assistance and successfully navigated the complete AAI clearance process. Their aviation background is visible in their work.",
