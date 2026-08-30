@@ -76,14 +76,6 @@ export default function Home() {
     { title: "300+ Successfully Completed Projects", desc: "Proven track record of obtaining clearances for tall structures." },
     { title: "Highly Experienced Professionals", desc: "A team of retired officers and active aviation surveyors." },
     { title: "End-to-End Consultancy", desc: "From preliminary site feasibility check to final NOC procurement." },
-    { title: "Drone Survey Experts", desc: "Using advanced UAVs to collect detailed topographical data." },
-    { title: "WGS-84 Survey Specialists", desc: "DGPS measurements in accordance with strict government criteria." },
-    { title: "Geo-Spatial Mapping", desc: "Precise digital models representing structural coordinates." },
-    { title: "Fast Documentation Support", desc: "Preventing rejection or delay due to structural paperwork errors." },
-    { title: "DGCA Compliance", desc: "Aligning designs and clearance files with Civil Aviation guidelines." },
-    { title: "AAI & IAF Approval Assistance", desc: "Expert navigation through military and civil clearance channels." },
-    { title: "NOCAS Portal Management", desc: "Accurate online drafting and file management for AAI cases." },
-    { title: "Pan India Services", desc: "Surveys and technical consultancy available throughout the country." },
   ];
 
   // Services list
@@ -114,18 +106,18 @@ export default function Home() {
   const testimonials = [
     {
       quote: "High Rise Approvals made a very complex IAF and AAI clearance process look simple. Their technical drone survey was highly professional, and they got our height clearance NOC without a single query from the board.",
-      author: "Harish Garg",
-      role: "Director, Garg Developers & Builders"
+      author: "Umang Jindal",
+      role: "CEO, Homeland Group"
     },
     {
       quote: "For our multi-specialty hospital tower, obtaining the Airport Height NOC was critical for construction. The team provided expert aeronautical survey assistance and successfully navigated the complete AAI clearance process. Their aviation background is visible in their work.",
-      author: "Dr. Sandeep Mehra",
-      role: "Managing Trustee, Apollo-Grace Healthcare Group"
+      author: "Adarsh Suri",
+      role: "Chief Administrator, Sohana Hospitals"
     },
     {
-      quote: "We were facing a critical rejection due to radar obstacle limitation. High Rise Approvals conducted an aeronautical study and successfully represented our case to the Appellate Committee. Highly recommended!",
-      author: "Vikas Sharma",
-      role: "Vice President of Infrastructure, Apex Telecom"
+      quote: "High Rise Approvals conducted a study and assessment and successfully presented our case to the IAF for an increase in height. Highly recommended!",
+      author: "Amit Gulati",
+      role: "Co Founder / MD, Vamana Group"
     }
   ];
 
@@ -227,7 +219,7 @@ export default function Home() {
       <section className="relative z-30 -mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass-card-dark rounded-2xl shadow-2xl border border-amber-400/25 p-8 grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-center justify-center text-center border-r border-slate-800/80 pr-4 lg:pr-8">
-            <Counter value={250} suffix="+" />
+            <Counter value={300} suffix="+" />
             <span className="font-poppins font-extrabold text-xs sm:text-sm text-slate-200 uppercase tracking-wider mt-2.5">
               Projects Successfully Delivered
             </span>
