@@ -21,8 +21,8 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "High Rise Approvals | Airport Height Clearance & Aviation NOC Consultancy",
-  description: "India's trusted aviation clearance consultants. End-to-end assistance for Airport Height Clearance NOCs from AAI & IAF, WGS-84 surveys, aeronautical studies, and obstacle evaluations.",
+  title: "Aviation Height Clearance Consultant India | High Rise Approvals",
+  description: "Get expert aviation height clearance and building height NOC consultancy across India. Assistance with AAI, IAF, WGS-84 surveys, NOCAS and aviation approvals.",
   keywords: "Airport NOC, Airport Height Clearance, AAI NOC, IAF NOC, Aviation Survey, WGS-84 Survey, Aeronautical Study, Obstacle Limitation Surface, CNS Assessment, High Rise Approvals",
 };
 
